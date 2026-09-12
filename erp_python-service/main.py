@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-NODE_API = os.getenv("NODE_API_URL", "http://localhost:5000/api")
+NODE_API = os.getenv("NODE_API_URL")
 
 class ReportRequest(BaseModel):
     start_date: Optional[str] = None
