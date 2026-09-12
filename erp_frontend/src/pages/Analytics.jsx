@@ -16,7 +16,7 @@ import {
   Zap,
 } from 'lucide-react'
 
-const PYTHON_API = 'http://localhost:8000'
+const PYTHON_API = 'https://erppython-service.vercel.app'
 
 export default function Analytics() {
   const [sales, setSales] = useState(null)
