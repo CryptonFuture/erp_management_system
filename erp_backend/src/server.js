@@ -25,7 +25,7 @@ app.use('/api/inventory', require('./routes/inventory'));
 app.use('/api/dashboard', require('./routes/dashboard'));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ status: 'OK', message: 'ERP Backend is running', timestamp: new Date() });
 });
 
